@@ -1,0 +1,4 @@
+<launch>
+	<node name="grid_localizer" pkg="lab4" type="localizer_node" args="$(find lab4)/src/grid.bag"/>
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find lab4)/src/default.rviz"/>
+</launch>
